@@ -1,4 +1,26 @@
-﻿(function(e){e.fn.tabs=function(t){var n={active:0,tit:"li",curClass:"current",trigger:"click"};var r=e.extend(n,t);return this.each(function(){function o(e){s.removeClass(r.curClass).eq(e).addClass(r.curClass);i.hide().eq(e).show()}var t=e(this);var n=t.attr("tab-tit");var i=e("[tab-con="+n+"]");var s=t.find(r.tit);s.bind(r.trigger,function(){o(s.index(this));return false});o(r.active)})}})(jQuery)
+﻿(function(e) 
+{
+    e.fn.tabs=function(t) {
+        var n= {active:0,tit:"li",curClass:"current",trigger:"click"};
+        var r= e.extend(n,t);
+        return this.each(function() {
+            function o(e) {
+                s.removeClass(r.curClass).eq(e).addClass(r.curClass);
+                i.hide().eq(e).show()}var t=e(this);
+                var n=t.attr("tab-tit");
+                var i=e("[tab-con="+n+"]");
+                var s=t.find(r.tit);
+                s.bind(r.trigger,function() {
+                    o(s.index(this));
+                    return false}
+                );
+                o(r.active)
+            })
+        }
+    }
+)(jQuery)
+
+
 //滚动到……
 function isScrolledIntoView(o,r){o=$(o);var t=$(window),r=r||0,e=t.scrollTop(),i=e+t.height(),n=o.offset().top+r,f=n+o.height(),h=n>i;if(h)return!1;var l=f>e;return l?!(h&&l):!1}
 
@@ -25,6 +47,7 @@ $(window).scroll(function(){
 
 });
 
+
 //手机头部
 jQuery(document).ready(function($) {
   var m_menu = $('.m-nav');
@@ -36,22 +59,8 @@ jQuery(document).ready(function($) {
         }
         return false;
     });
-
-    /*$('.m-nav li a.v1').click(function(){
-        var sub = $(this).next('.m-sub');
-        if( sub.length > 0){
-            if( sub.is(':visible') ){
-                sub.hide();
-            }else{
-                $('.m-nav .m-sub').hide();
-                sub.css('display','inline-block');
-            }
-            return false;
-        }else{
-            return true;
-        }
-    })*/
  });
+
 
 //右侧边栏
 $(document).ready(function(){
@@ -63,6 +72,7 @@ $(document).ready(function(){
     });
     
 });
+
 
 //回到顶部
 function goTop(){
@@ -115,46 +125,6 @@ function moveAbout(){
   }
 }(jQuery);
 
-/*
-$(document).ready(function(){
-    var debounce = function(fn, delay) {
-        var timeout;
-        return function() {
-            var self = this;
-            var args = arguments;
-            window.clearTimeout(timeout);
-            timeout = window.setTimeout(function() {
-                fn.apply(self, args);
-            }, delay);
-        };
-    };
-
-
-    var showS = debounce(function(){
-        $('#hd').stop(true,true).slideDown(200);
-    },300);
-    var hideS = debounce(function(){
-        $('#hd').stop(true,true).slideUp(200);
-    },300);
-
-    var lastScrollTop = 0;
-
-    $(window).scroll(function(event){
-        if( $('#m-hd').is(':visible') ){
-            return;
-        }
-       var st = $(this).scrollTop();
-       if (st > lastScrollTop){
-           hideS();
-       } else {
-           showS();
-       }
-       lastScrollTop = st;
-
-    });
-
-
-})*/
 
 $('#fd .weixin').hover(function(){
     $(this).parents('dd').find('.weixin-pic').stop().slideToggle();

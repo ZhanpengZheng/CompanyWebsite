@@ -7,7 +7,7 @@
           controlNav: false,
           directionNav: true,
           pauseOnHover: true,
-          slideshowSpeed: 3000, 
+          slideshowSpeed: 2000, 
           start:function(slider){
 
         },
@@ -37,6 +37,7 @@
           h4.addClass( h4.data('animate') );
           h6.addClass( h6.data('animate') );
       }
+      
       //第一次的时候执行动画
       $(window).load(function(){
         move();

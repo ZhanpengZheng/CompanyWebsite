@@ -9,41 +9,45 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.trans{
+.trans {
     -o-transition:.3s;
     -ms-transition:.3s;
     -moz-transition:.3s;
     -webkit-transition:.3s;
     transition:.3s;
 }
-hr{border: none;outline: none;}
-h1,h2,h3,h3,h4,h5,h6{font-weight: normal;}
-img{
+hr {
+	border: none;
+	outline: none;
+}
+h1,h2,h3,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+img {
 	max-width: 100%;
 }
 
 
-body{
+body {
 	font-family:"微软雅黑","Microsoft Yahei";
 }
-.wp{
+.wp {
 	width: 100%;
 	max-width: 1170px;
 	margin: 0 auto;
 }
-a{
+a {
 	color: #333;	
 }
-a:hover{
+a:hover {
 	color: #e4392a;
 }
 
 /*头部*/
-#bd{
+#bd {
 	padding-top: 90px;
 }
-#hd{
-	/*height: 101px;*/
+#hd {
 	height: 90px;
 	background: #fff;
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, .3);
@@ -58,35 +62,33 @@ a:hover{
 	-webkit-transition:.3s;
 	transition:.3s;
 }
-.fixed{
+.fixed {
     top: -101px !important;
 }
 
-#hd .logo{
+#hd .logo {
 	float: left;
 	margin-right: 65px;
-	/*height: 101px;*/
 	height: 90px;
 }
-#hd .logo a{
+#hd .logo a {
 	display: block;
 	height: 100%;
-	/*line-height: 101px;*/
 	line-height: 90px;
 }
-#hd .logo a img{
+#hd .logo a img {
     max-height:60px;
 	display: inline-block;
 	vertical-align: middle;
 }
 
-#nav ul li{
+#nav ul li {
 	float: left;
 	line-height: 90px;
 	width: 100px;
 	margin-right: 10px;
 }
-#nav ul li a{
+#nav ul li a {
 	display: inline-block;
 	width: 100%;
 	text-align: center;
@@ -94,10 +96,10 @@ a:hover{
 	border-bottom: 3px solid #fff;
 	height: 90px;
 }
-#nav ul li a:hover{
+#nav ul li a:hover {
 	border-bottom: 3px solid #e4392a;
 }
-#hd .tel{
+#hd .tel {
 	background: url(../images/tel_bg.png) left center no-repeat;
 	line-height: 90px;
 	float: right;
@@ -107,7 +109,7 @@ a:hover{
 }
 
 /*手机头部*/
-#m-hd {display: none;}
+#m-hd { display: none; }
 #m-hd {
 	height: 50px;
 	line-height: 50px;
@@ -117,7 +119,10 @@ a:hover{
 	width: 100%;
 	z-index: 999999;
 }
-#m-hd img{height: 40px;padding: 10px 0 0 10px;}
+#m-hd img {
+	height: 40px;
+	padding: 10px 0 0 10px;
+}
 .m-trigger {
 	position: absolute;
 	top: 0;
@@ -155,7 +160,7 @@ a:hover{
 	color: #fff;
 	font-size: 14px;
 }
-.m-nav a:hover,.m-nav a:active{
+.m-nav a:hover,.m-nav a:active {
 	color: #e4392a;
 }
 .m-sub {
@@ -170,36 +175,36 @@ a:hover{
 
 
 /*底部*/
-#fd{
+#fd {
 	background: url(../images/fd_bg.png) center top no-repeat;
 	padding-top: 75px;
 }
-.index-fd{
+.index-fd {
 	margin-top: -31px;
 }
-#fd .fd-top{
+#fd .fd-top {
 	overflow: hidden;
 	color: #fff;
 	padding-bottom: 45px;
 }
-#fd dl{
+#fd dl {
 	float: left;
 	width: 20%;
 }
-#fd dl dt{
+#fd dl dt {
 	font-size: 16px;
 	padding-bottom: 20px;
 }
-#fd .ul-fd li{
+#fd .ul-fd li {
 	line-height: 26px;
 }
-#fd .ul-fd li a{
+#fd .ul-fd li a {
 	color: #a8a8af;
 }
-#fd .ul-fd li a:hover{
+#fd .ul-fd li a:hover {
 	text-decoration: underline;
 }
-#fd .weixin,#fd .sina{
+#fd .weixin,#fd .sina {
 	background: url(../images/fd_icon1.png) no-repeat;
 	width: 25px;
 	height: 25px;
@@ -207,34 +212,59 @@ a:hover{
 	margin-right: 10px;
 	margin-bottom: 25px;
 }
-#fd .weixin-pic{
+#fd .weixin-pic {
 	position: absolute;
 	left: -150px;
 	top: 0;
 	display: none;
 }
-#fd .tel{
+#fd .tel {
 	font-weight: normal;
 	font-size: 24px;
 	padding-bottom: 15px;
 }
-#fd h5{
+#fd h5 {
 	font-size: 16px;
 	color: #a8a8af;
 }
-#fd .sina{
+#fd .sina {
 	background-image: url(../images/fd_icon2.png);
 }
-#fd .fd-copy{
+#fd .fd-copy {
 	height: 40px;
 	line-height: 40px;
 	color: #a3a3a9;
 	background-color: #000022;
 }
+
+
 /* side */
-.side{position:fixed;width:50px;height:275px;right:0;top:250px;z-index:100;}
-.side ul li{width:50px;height:50px;float:left;position:relative;margin-bottom: 2px;}
-.side ul li .sidebox{position:absolute;width:50px;height:50px;border-radius:5px 0 0 5px;top:0;right:0;transition:all 0.3s;background:#000022;color:#fff;font:16px/50px "微软雅黑";overflow:hidden;}
+.side { 
+	position:fixed;
+	width:50px;
+	height:275px;
+	right:0;
+	top:250px;
+	z-index:100;
+}
+.side ul li {
+	width:50px;
+	height:50px;
+	float:left;
+	position:relative;
+	margin-bottom: 2px;
+}
+.side ul li .sidebox {
+	position:absolute;
+	width:50px;
+	height:50px;
+	border-radius:5px 0 0 5px;
+	top:0;right:0;
+	transition:all 0.3s;background:#000022;
+	color:#fff;
+	font:16px/50px "微软雅黑";
+	overflow:hidden;
+}
 .side ul li a:hover .sidebox{width: 175px;}
 .side ul li .sidetop{width:50px;height:50px;line-height:50px;display:inline-block;background:#000;opacity:0.8;filter:Alpha(opacity=80);transition:all 0.3s;}
 .side ul li .sidetop:hover{background:#e4392a;}
@@ -296,10 +326,6 @@ a:hover{
 #banner .slides li .pic{
 	display: block;
 	padding-top: 36.4%;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
     background-position: center bottom;
     position: relative;
 }
@@ -499,9 +525,6 @@ a:hover{
 .ul-icon-i li.li4 a span{
 	background-position: -930px 0;
 }
-/*.ul-icon-i li a:hover span{
-	background-image: url(../images/i_icon1_h.png);
-}*/
 .ul-icon-i li .pad .pic{
 	position: absolute;
 	left: 50%;
@@ -553,7 +576,7 @@ a:hover{
 .case-img .hover{
 	position: absolute;
 	left: 0;
-	top: -434px;/*top: -433px;*/
+	top: -434px;
 	-o-transition:.3s;
 	-ms-transition:.3s;
 	-moz-transition:.3s;
@@ -600,7 +623,6 @@ a:hover{
 	text-align: center;
 	background: url(../images/alpha_red_80.png) repeat;
 	color: #fff;
-	/*display: none;*/
 	-o-transition:.3s;
 	-ms-transition:.3s;
 	-moz-transition:.3s;
@@ -616,7 +638,6 @@ a:hover{
 	height: 100%;
 }
 .ul-case-i li a:hover .hover{
-	/*display: block;*/
 	top: 0;
 }
 .ul-case-i-1 li{
@@ -649,7 +670,6 @@ a:hover{
 	border-bottom-color: #dddde1;
 }
 .ul-news-i{
-	/*margin-right: -10px;*/
 	margin-left: -30px;
 	width: 110%;
 }
@@ -666,9 +686,6 @@ a:hover{
 	transition:.3s;
 	overflow: hidden;
 } 
-.ul-news-i li:last-child{
-	/*width: 21%;*/
-}
 .ul-news-i li .txt{
 	padding-left: 30px;
 	padding-right: 58px;
@@ -683,9 +700,6 @@ a:hover{
 .ul-news-i li .txt span em{
 	display: block;
 	font-size: 20px;
-}
- .ul-news-i li:last-child .txt{
-	/*padding-right: 0;*/
 }  
 .ul-news-i li h3 a{
 	color: #fff;
@@ -702,9 +716,6 @@ a:hover{
 	height: 36px;
 	display: inline-block;
 	margin-top: 50px;
-}
-.ul-news-i li .hover{
-		
 }
 .ul-news-i li .hover .img{
 	width: 100%;
@@ -736,7 +747,6 @@ a:hover{
 }
 
 .ul-news-i li.on .hover .img{
-	/*display: block;*/
 	top: 0;
 }
 .ul-news-i li.on .hover .pad{
@@ -818,85 +828,12 @@ a:hover{
 	font-size: 16px;
 }
 
-.map{
-	margin-top: 100px;
-	position: relative;
-}
-.map em{
-	background: url(../images/arr1.jpg) center top no-repeat;
-	width: 100%;
-	height: 15px;
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-.map-s{
-	background: url(../images/map_s.png) center top;
-	height: 107px;
-	text-align: center;
-	overflow: hidden;
-}
-.map .btn{
-	text-align: center;
-	color: #fff;
-	font-size: 18px;
-	line-height: 132px;
-	display: inline-block;
-}
-.map .btn-down{
-	background: url(../images/map_down.png) no-repeat;
-	width: 112px;
-	height: 48px;
-	display: inline-block;
-	position: absolute;
-	left: 50%;
-	top: 52px;
-	margin-left: -50px;
-	z-index: 99;
-}
-#map{
-}
-.map-pop{
-	display: none;
-	height: 540px;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-}
-.map .map-bg1,.map .map-bg2{
-	background: url(../images/ban_bg_top.png) no-repeat center 0;
-	height: 54px;
-	position: absolute;
-	left: 0;
-	top: 0;	
-	width: 100%;
-	z-index: 66;
-}
-.map .map-bg2{
-	background-image: url(../images/map_bg2.png);
-	height: 41px;
-	bottom: 0px;
-	top: auto;
-}
-.map-pop-big{
-	height: 600px;
-	bottom:auto;
-	top: 0;
-}
-.map-big{
-    height: 600px;
-    margin-top: 0;
-}
-
 
 /*内页*/
 #ban-in{
 	position: relative;
 	background-position: center 0;
 	background-repeat: no-repeat;
-	/*padding-top: 16%;*/
 	height: 300px;
 }
 #ban-in .ban-bg{
@@ -933,7 +870,7 @@ a:hover{
 
 
 
-/*网思动态*/
+/*众焰动态*/
 .ul-list{
 	margin: 0 -15px;
 }
@@ -997,7 +934,7 @@ a:hover{
 	margin-bottom: 20px;
 }
 .ul-list li .title span{
-	float: left;
+	/*float: left;*/
 	border: 1px solid #e2e3e8;
 	background-color: #f0f2f5;
 	display: inline-block;
@@ -1016,7 +953,9 @@ a:hover{
 }
 
 
-/*网思案例*/
+
+
+/*合作案例*/
 .sub-nav{
 	text-align: center;
 	margin-bottom: 50px;
@@ -1120,7 +1059,8 @@ a:hover{
 
 
 
-/*关于网思*/
+
+/*关于众焰*/
 .about-info{
 	text-align: center;
 	font-size: 14px;
@@ -1179,9 +1119,7 @@ a:hover{
 	background-color: #fff;
 }
 .team .flexslider .slides li{
-	/*background-position: 89% 0;*/
 	height: 468px;
-	/*background-repeat: no-repeat;*/
 }
 .team .flexslider li .txt{
 	padding-top: 85px;
@@ -1254,9 +1192,6 @@ a:hover{
 	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	top: 13px;
 }
-.team .flex-direction-nav .flex-prev{
-	
-}
 .team .flex-direction-nav .flex-next{
 	background-image: url(../images/arr_b.png);
 	left: 10px;
@@ -1321,6 +1256,7 @@ a:hover{
 }
 
 
+
 /*动态详情页*/
 .cur{
 	line-height: 76px;
@@ -1356,111 +1292,13 @@ a:hover{
 }
 .article .share span{
 	font-size: 14px;
-	float: left;
+	/*float: left;*/
 	display: inline-block;
 	line-height: 37px;
 }
 
 
-/*案例详情*/
-.case-article{
-	line-height: 30px;
-	color: #666;
-}
-.case-article-bg{
-	margin-bottom: 13%;
-	margin-bottom: 5%\0 !important;
-	background-position: top center\0 !important;
-}
-.case-article .case-logo{
-	text-align: center;
-	padding-top: 38px;
-}
-
-.case-article h1{
-	line-height: 40px;
-	font-size: 18px;
-	text-align: center;
-}
-.case-article .btn{
-	text-align: center;
-	padding: 10px 0;
-	margin-bottom: 30px;
-}
-.case-article .btn a{
-	display: inline-block;
-	width: 120px;
-	height: 30px;
-	text-align: center;
-	line-height: 30px;
-	background-color: #e4392a;
-	color: #fff;
-	font-size: 14px;
-	margin: 0 12px;
-	border-radius: 5px;
-}
-
-.case-article .computer-bg{
-	position: relative;
-	text-align: center;
-	background: url(../images/computer.png) center top no-repeat;
-	transform: translateY(45.9%);
-	-webkit-transform: translateY(45.9%);
-	-moz-transform: translateY(45.9%);
-	width: 70%;
-	margin: 0 auto;
-	margin: -32% auto 0 auto;
-	-webkit-background-size: 100%;
-	background-size: 89%;
-	padding-top: 70%;
-	margin:0 auto\0;
-	padding-top: 50%\0;
-}
-.case-article .computer-bg img{
-	position: absolute;
-	left: 8.5%;
-	top: 4%;
-	width: 83%;
-}
-.case-article .case-back{
-	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 90px;
-}
-.case-article .case-back a{
-	display: inline-block;
-	width: 178px;
-	height: 48px;
-	text-align: center;
-	line-height: 48px;
-	border: 1px solid #63637f;
-	color: #002;
-	font-size: 18px;
-	border-radius: 5px;
-}
-.case-article .case-back a:hover{
-	background-color: #e4392a;
-	color: #fff;
-	border-color: #e4392a;
-}
-.article-prev,.article-next{
-	position: absolute;
-	top: 50%;
-	background: url(../images/article_prev.png) no-repeat;
-	width: 36px;
-	height: 66px;
-	margin-top: -33px;
-	left: 0;
-	z-index: 2;
-}
-.article-next{
-	background-image: url(../images/article_next.png);
-	left: auto;
-	right: 0;
-}
-
-
-/*网思服务*/
+/*众焰服务*/
 .h50{
 	height: 50px;
 	overflow: hidden;
@@ -1512,10 +1350,6 @@ a:hover{
 	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity= 60)';
 	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
 }
-
-.ul-webset{
-
-}
 .webset-pop{
 	position: absolute;
 	left: 0;
@@ -1545,7 +1379,7 @@ a:hover{
 	position: relative;
 	top: 20px;
 	left: auto;
-	float: right;
+	/*float: right;*/
 }
 
 .webset-pop .txt{
@@ -1704,9 +1538,6 @@ a:hover{
 .ul-tab li.hover span,.ul-tab li a:hover span{
 	color: #e4392a;
 }
-.tab-show{
-	
-}
 .tab-con{
 	overflow: hidden;
 }
@@ -1736,15 +1567,12 @@ a:hover{
 	display: none;
 }
 .web-con .pic .img{
-	/* position: absolute;
-	left: 43px;
-	top: 50px; */
 	width: 139px;
 	z-index: -1;
 	display: inline-block;
 }
 .tab-con .txt{
-	/*width: 66%;*/width: 84%;
+	width: 84%;
 }
 .tab-con .pic{
 	float: right;
@@ -1754,9 +1582,6 @@ a:hover{
 	margin-top: 50px;
 }
 .tab-con .pic .img{
-	/* position: absolute;
-	left: 43px;
-	top: 50px; */
 	width: 139px;
 	z-index: -1;
 }
@@ -1771,7 +1596,6 @@ a:hover{
 	padding-bottom: 45px;
 }
 .ul-icon{
-	/*padding-right: 50px;*/
 	overflow: hidden;
 }
 .ul-icon li{
@@ -1939,7 +1763,7 @@ a:hover{
 }
 .ul-solution li{
 	float: left;
-	width:16.66666%;/*width: 15.67%;*/
+	width:16.66666%;
 	text-align: center;
 	margin-bottom: 65px;
     position: relative;
@@ -2047,7 +1871,6 @@ a:hover{
 .ul-service li .pad span i{
 	display: block;
 	font-style: normal;
-	vertical-align: top;
 	padding-left: 40px;
 	padding-top: 6px;
 }
@@ -2059,8 +1882,6 @@ a:hover{
 
 .ul-txt{
 	border: 1px solid #e5e5e5;
-}
-.ul-txt li{
 }
 .ul-txt li h5{
     background: url(../images/jia.png) 95% center no-repeat;
