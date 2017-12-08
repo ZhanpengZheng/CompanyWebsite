@@ -31,7 +31,7 @@ img { border:0 }
 .main-page .left {
     padding-right: 25px;
     border-right: 1px #fff solid;
-    margin-top:150px;
+    margin-top:200px;
 }
 .main-page .left, .main-page .right { float:left; }
 .main-page .nav-back { height:300px; }
@@ -127,13 +127,13 @@ img { border:0 }
 }
 .zcinfo {
     width:550px;
-    margin-top:220px;
+    margin-top:280px;
 }
 .ptpic-dl,.ptpic-dl img {
     width:300px;
     height:600px
 }
 .ptpic-dl {
-    margin-top:85px;
+    margin-top:130px;
     margin-left: 70px;
 }

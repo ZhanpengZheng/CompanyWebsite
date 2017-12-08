@@ -1961,7 +1961,72 @@ a:hover {
 }
 .a-prev {
 	float:left;
+	margin-bottom:20px;
 }
 .a-next {
 	float:right;
+	margin-bottom:20px;
+}
+
+
+
+/*news-info*/
+/*新闻详情*/
+.news-info {
+	width:75%;
+	margin:0 auto;
+}
+.news-title {
+	width:70%;
+	margin:20px auto;
+	font-size:32px;
+	text-align:center;
+}
+.news-subtitle {
+	margin-bottom:30px;
+	font-size:20px;
+	text-align:center;
+}
+.news-img {
+	text-align:center;
+}
+.news-intro {
+	font-size: 15px;
+	text-indent: 2em;
+}
+.a-prev {
+	float:left;
+}
+.a-next {
+	float:right;
+}
+.last-news-intro {
+	margin-bottom: 10px;
+}
+
+
+
+/*law*/
+/*法律申明*/
+.law {
+	width:75%;
+	margin:0 auto;
+}
+.law-title {
+	width:70%;
+	margin:20px auto;
+	font-size:32px;
+	text-align:center;
+}
+.law-author {
+	margin-bottom:30px;
+	font-size:20px;
+	text-align:center;
+}
+.law-intro {
+	font-size: 15px;
+	text-indent: 2em;
+}
+.last-law-intro {
+	margin-bottom: 70px;
 }
