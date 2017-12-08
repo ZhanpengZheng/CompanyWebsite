@@ -1929,3 +1929,39 @@ a:hover {
 	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
 }
 .case-img2 p{text-align: center;}
+
+
+
+
+/*case-info*/
+/*案例详情*/
+.case-info {
+	width:75%;
+	margin:0 auto;
+}
+.case-title {
+	margin-bottom:20px;
+	font-size:32px;
+	text-align:center;
+}
+.case-subtitle {
+	margin-bottom:30px;
+	font-size:20px;
+	text-align:center;
+}
+.case-background, .case-detail {
+	font-size:25px;
+}
+.case-img {
+	text-align:center;
+}
+.case-intro {
+	font-size: 15px;
+	text-indent: 2em;
+}
+.a-prev {
+	float:left;
+}
+.a-next {
+	float:right;
+}
