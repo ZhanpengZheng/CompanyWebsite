@@ -2028,13 +2028,15 @@ a:hover {
 	font-size:20px;
 	margin-bottom:20px;
 	margin-top:20px;
+	font-weight: bolder;
 }
 .law-intro {
 	font-size: 15px;
 	text-indent: 2em;
+	line-height: 30px;
 }
 .last-law-intro {
-	margin-bottom: 70px;
+	margin-bottom: 100px;
 	font-size: 15px;
 	text-indent: 2em;
 }
